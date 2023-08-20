@@ -14,7 +14,7 @@ const EventTable = ({ bouts }: any) => {
           <Bout bout={bout} />
         ))}
       </TableBody>
-
+            {/* Fix this  */}
     <TableRow >
         <TableCell align="center" >
             </TableCell>

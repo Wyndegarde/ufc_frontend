@@ -1,9 +1,9 @@
-import {EventCard, ResponsiveAppBar} from '../components';
+import {EventCard, Header} from '../components';
 
 const HomePage = () => {
   return (
     <>
-      <ResponsiveAppBar />
+      <Header />
       <EventCard />
     </>
   );
