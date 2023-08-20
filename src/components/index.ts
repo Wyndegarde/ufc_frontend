@@ -1,2 +1,2 @@
-export {default as EventCard} from './EventCard';
+export {EventCard} from './eventCard';
 export {default as ResponsiveAppBar} from './ResponsiveAppBar';
