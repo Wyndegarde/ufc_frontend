@@ -24,7 +24,8 @@ const bouts: BoutObj[] = [
 const EventCard = () => {
   return (
     <>
-      <Container sx={{ bgcolor: "white" }}>
+      <Container >
+      {/* sx={{ bgcolor: "white" }} */}
         <EventTitle />
         <Box component="form" className="event-table">
           <EventTable bouts={bouts} />
