@@ -1,4 +1,5 @@
 import Table from "@mui/material/Table";
+import TableFooter  from "@mui/material/TableFooter";
 import TableBody from "@mui/material/TableBody";
 import TableRow from "@mui/material/TableRow";
 import TableCell from "@mui/material/TableCell";
@@ -15,6 +16,7 @@ const EventTable = ({ bouts }: any) => {
         ))}
       </TableBody>
             {/* Fix this  */}
+    <TableFooter>
     <TableRow >
         <TableCell align="center" >
             </TableCell>
@@ -38,6 +40,7 @@ const EventTable = ({ bouts }: any) => {
       </Button>
         </TableCell>
           </TableRow>
+    </TableFooter>
     </Table>
   );
 };
