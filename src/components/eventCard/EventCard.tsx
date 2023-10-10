@@ -44,9 +44,9 @@ const EventCard = () => {
     <>
       <NextEventContext.Provider value={{ nextEvent, fetchNextEvent }}>
         <EventTitle />
-        <Box component="form" className="event-table">
+        {/* <Box component="form" className="event-table"> */}
           <EventTable bouts={nextEvent} />
-        </Box>
+        {/* </Box> */}
       </NextEventContext.Provider>
     </>
   );
