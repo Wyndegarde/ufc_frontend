@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { HomePage } from './pages';
+
+
 
 function App() {
   return (

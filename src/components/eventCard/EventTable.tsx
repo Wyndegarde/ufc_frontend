@@ -1,47 +1,24 @@
 import Table from "@mui/material/Table";
-import TableFooter  from "@mui/material/TableFooter";
 import TableBody from "@mui/material/TableBody";
-import TableRow from "@mui/material/TableRow";
-import TableCell from "@mui/material/TableCell";
-import Button from "@mui/material/Button";
-import { TableHeader, Bout } from ".";
+import { EventTableHeader, Bout, EventTableFooter } from ".";
 
 const EventTable = ({ bouts }: any) => {
+  // console.log(bouts);
   return (
-    <Table sx={{ minWidth: 650 }} aria-label="simple table">
-      <TableHeader />
-      <TableBody>
-        {bouts.map((bout: any) => (
-          <Bout bout={bout} />
-        ))}
-      </TableBody>
-            {/* Fix this  */}
-    <TableFooter>
-    <TableRow >
-        <TableCell align="center" >
-            </TableCell>
-        <TableCell align="center" >
-
-      <Button
-        component="div"
-        variant="contained"
-        sx={{ float: "right"}}
-        >
-        View Event
-      </Button>
-        </TableCell>
-        <TableCell align="center">
-
-      <Button
-        component="div"
-        variant="contained"
-        >
-        Predict Outcomes
-      </Button>
-        </TableCell>
-          </TableRow>
-    </TableFooter>
-    </Table>
+    <div style={{ height: "600px", overflow: "auto" }}>
+      <Table
+        sx={{ width: "100%", tableLayout: "fixed" }}
+        aria-label="simple table"
+      >
+        <EventTableHeader />
+        <TableBody>
+          {bouts.map((bout: any) => (
+            <Bout key={Math.floor(Math.random() * 10000)} bout={bout} />
+          ))}
+        </TableBody>
+        <EventTableFooter />
+      </Table>
+    </div>
   );
 };
 

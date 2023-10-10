@@ -6,14 +6,14 @@ const Bout = ({ bout }: any) => {
     <TableRow key={bout.id}>
       <TableCell align="center">
         <div>
-          <h3>{bout.redFighter}</h3>
-          <p>{bout.redRecord}</p>
+          <h3>{bout.red_fighter}</h3>
+          <p>{bout.red_record}</p>
         </div>
       </TableCell>
       <TableCell align="center">
         <div>
-          <h3>{bout.blueFighter}</h3>
-          <p>{bout.blueRecord}</p>
+          <h3>{bout.blue_fighter}</h3>
+          <p>{bout.blue_record}</p>
         </div>
       </TableCell>
       <TableCell align="center"></TableCell>
