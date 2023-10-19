@@ -33,9 +33,9 @@ function Header() {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+  // const handleCloseNavMenu = () => {
+  //   setAnchorElNav(null);
+  // };
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
@@ -95,7 +95,8 @@ function Header() {
           >
             LOGO
           </Typography>
-          <Links onCloseNavMenu={handleCloseNavMenu} />
+          {/* <Links onCloseNavMenu={handleCloseNavMenu} /> */}
+          <Links/>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
